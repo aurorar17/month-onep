@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTH ONE PROJECT</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .form-container {
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+            width: 45%;
+            box-sizing: border-box;
+            margin-bottom: 140px;
+        }
+
+        .form-container div {
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #219f45;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="tel"],
+        .form-container input[type="date"],
+        .form-container input[type="time"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #a5afba;
+        }
+
+        .form-container input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        #botton {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="../index.html">
+                <img src="../images/klematys.png" alt="Company logo">
+            </a>
+            <ul>
+                <li><a href="./menu.html">Daily Menu</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Contacts</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Phone Number: <br> (+39) 347 8567483</a></li>
+                        <li><a href="#" class="dropdown-item">Email: <br> klematys@alice.it</a></li>
+                        <li><a href="#" class="dropdown-item">Adress: <br> Via Pieve 35/A 32020 Livinallongo (BL) -
+                                ITALY</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./reserve.html">Reserve</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <form class="form-container" style="margin-top: 0px;">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" required>
+            </div>
+
+            <div>
+                <label for="npeople">People numbers:</label>
+                <input type="number" name="npeople" id="npeople" min="2" max="30" value="2" required>
+
+                <label for="phonen">Phone number:</label>
+                <input type="tel" name="phonen" id="phonen" required>
+            </div>
+
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Hour:</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <div>
+                <label for="dogs">Check this box if you have dogs:</label>
+                <input type="checkbox" id="dogs" name="dogs">
+            </div>
+
+            <fieldset>
+                <legend>Check the boxes if you have kids:</legend>
+                <label><input type="checkbox" name="kids" value="1"> Kid 1</label>
+                <label><input type="checkbox" name="kids" value="2"> Kid 2</label>
+                <label><input type="checkbox" name="kids" value="3"> Kid 3</label>
+                <label><input type="checkbox" name="kids" value="4"> Kid 4</label>
+                <label><input type="checkbox" name="kids" value="5"> Kid 5</label>
+            </fieldset>
+
+            <div id="botton">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <table>
+                <h3 style="background-color: #f2f2f2; text-align: center;">OPENING HOURS</h3>
+                <tr>
+                    <th>MONDAY</th>
+                    <td>08:30 - 23:00</td>
+                </tr>
+                <tr>
+                    <th>TUESDAY</th>
+                    <td>08:30 - 23:00</td>
+                </tr>
+                <tr>
+                    <th>WEDNESDAY</th>
+                    <td><strong>CHIUSO</strong></td>
+                </tr>
+                <tr>
+                    <th>THURSDAY</th>
+                    <td>08:30 - 23:00</td>
+                </tr>
+                <tr>
+                    <th>FRIDAY</th>
+                    <td>08:30 - 03:00</td>
+                </tr>
+                <tr>
+                    <th>SATURDAY</th>
+                    <td>08:30 - 03:00</td>
+                </tr>
+                <tr>
+                    <th>SUNDAY</th>
+                    <td>08:30 - 23:00</td>
+                </tr>
+                <caption>Opening times for summer months</caption>
+            </table>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.338741338765!2d11.952169811549618!3d46.48160457098824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477847a5335c3249%3A0xaec45110ee11dd13!2sPizzeria%20Klematys!5e0!3m2!1sit!2sca!4v1724534634291!5m2!1sit!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
