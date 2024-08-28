@@ -1,4 +1,4 @@
-# FIRST WEEK PROJECT
+# FIRST MONTH PROJECT
 
 ## Description
 I am attending a Web Development course at Tamwood International College and this project is based on the instructions of the Month one project and assignement. 
