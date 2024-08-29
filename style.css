@@ -279,8 +279,7 @@ caption {
 /* Stile per l'iframe della mappa */
 .map-container iframe {
     width: 100%;
-    /* Adatta la larghezza all'interno del contenitore */
+
     height: 280px;
-    /* Altezza fissa */
     border: 1px solid black;
 }
